@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:wght@400;600;700&display=swap');
+  *{
+  padding:0;
+  margin:0;
+  scroll-behavior: smooth;
+  font-family: 'Crimson Text', serif;
+}
+.projects{
+ min-height: 100vh;
+}
+.project-container{
+  display :flex;
+  
+/*   flex-wrap:wrap; */
+}
+
+#navbar{
+  position:fixed;
+  padding:15px;
+  width:100%;
+  display:flex;
+  flex-direction:row;
+  justify-content:flex-end;
+  background-color:#7f0000;
+  
+}
+
+#navbar a{
+  text-decoration:none;
+  color:white;
+  font-size:1.4em;
+  font-weight:bold;
+  padding:1.2em;
+  transition:all 0.5s ease-in-out;
+ 
+ }
+#navbar a:hover{
+  background-color:#9ea7aa;
+  border-radius: 50%;
+}
+
+#welcome-section{
+  text-align:center;
+  padding-top:50vh;
+  font-size: 40px;
+  background-color:#808e95;
+  min-height: 100vh;
+}
+#projects{
+  text-align:center;
+  padding-top:10vh;
+  background-color:#efebe9;
+  font-size:30px;
+  min-height: 100vh;
+}
+#profile-link{
+  background-color:#808e95;
+  text-align:center;
+  padding-top:100px;
+  font-size:40px;
+  min-height: 100vh;
+  align-items:center;
+}
+ .img-responsive{
+item-align:center;
+   padding:20px;
+}
+
+
+#profile-link a{
+ text-decoration: none; 
+  color:#000;
+  padding:6px;
+  font-size:35px;
+  padding-top:100px;
+}
+.project-tiles{
+  
+}
+.profile{
+  display : flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top:100px;
+}
+
+.project-tiles a{
+  text-decoration:none;
+  color: black;
+padding-left:30px;
+}
+
+
+@media only screen and  (max-width: 650px){
+  #navbar{
+    justify-content: center;
+  }
+.project-container{
+  flex-direction: column;
+  
+} 
+}
